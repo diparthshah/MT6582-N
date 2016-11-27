@@ -58,11 +58,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
-# GSM
-#PRODUCT_PACKAGES += \
-#    gsm0710muxd
-PRODUCT_PACKAGES += libmt6582
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MediaTekRIL
 
@@ -74,8 +69,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
     $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
-    $(LOCAL_PATH)/rootdir/enableswap.sh:root/enableswap.sh \
-    $(LOCAL_PATH)/rootdir/factory_init.rc:root/factory_init.rc \
     $(LOCAL_KERNEL):kernel
 
 # Permissions
